@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'FCSM Legendary';	
+	src: local('FCSM Legendary'),
+		url('fonts/FCSMLegendary-Regular_0.woff') format('woff'), 		
+		url('fonts/FCSMLegendary-Regular_0.ttf') format('ttf');		
+}
+
+
+@font-face {
+	font-family: 'PFDinTextCompPro-MedItal';
+	font-style: italic;
+	font-weight: medium;
+	src: local('PFDinTextCompPro-MedItal'),
+		url('fonts/pfdintextcomppro-medital.woff') format('woff'), 		
+		url('fonts/PFDinTextCompPro-Medium.ttf') format('ttf');		
+}
+
+@font-face {
+	font-family: 'PFDinTextCompPro-MedItal';
+	font-style: italic;
+	font-weight: medium;
+	src: local('PFDinTextCompPro-MedItal'),
+		url('fonts/pfdintextcomppro-medital.woff') format('woff'), 		
+		url('fonts/PFDinTextCompPro-Medium.ttf') format('ttf');		
+}
+
+
+
+.header_black{
+    max-width: 1880px;
+    background-color: black;
+    height: 37px;
+    
+}
+
+
+.fon {
+  background-image: url(img/fon.png);    
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+text-align: center
+ 
+ }
+
+ .header_red{
+  background-image: url(img/red_top.png);
+  width: 100%;
+  max-width: 1880px;
+  height: 100%;
+  
+ }
+
+ .conteiner{
+  max-width:1230px;
+  padding: 0 15px;
+  margin:0 auto;
+
+}
+
+.top_txt{
+  text-align: center;
+}
+
+
+
+.header_title{ 
+    font-size: 87px;
+    font-family: "FCSM Legendary";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+ 
+  
+  
+}
+
+
