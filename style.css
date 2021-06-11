@@ -7,16 +7,31 @@
           box-sizing: border-box;
 }
 
+.white {
+  color: #fff !important;
+}
+
+.red {
+  color: #de1d3c;
+}
+
+.black {
+  color: black;
+}
+
 @font-face {
   font-family: 'FCSM Legendary';
   src: local("FCSM Legendary"), url("fonts/FCSMLegendary-Regular_0.woff") format("woff"), url("fonts/FCSMLegendary-Regular_0.ttf") format("ttf");
 }
 
 @font-face {
-  font-family: 'PFDinTextCompPro-MedItal';
-  font-style: italic;
-  font-weight: medium;
-  src: local("PFDinTextCompPro-MedItal"), url("fonts/pfdintextcomppro-medital.woff") format("woff"), url("fonts/PFDinTextCompPro-Medium.ttf") format("ttf");
+  font-family: 'DINPro-Medium';
+  src: local("DINPro-Medium"), url("fonts/DINPro-Medium.woff") format("woff"), url("fonts/DINPro-Medium.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'DINPro';
+  src: local("PFDinTextCompPro-MedItal"), url("fonts/DINPro.woff") format("woff"), url("fonts/DINPro.woff") format("ttf");
 }
 
 @font-face {
@@ -26,10 +41,19 @@
   src: local("PFDinTextCompPro-MedItal"), url("fonts/pfdintextcomppro-medital.woff") format("woff"), url("fonts/PFDinTextCompPro-Medium.ttf") format("ttf");
 }
 
+.fon2 {
+  background-image: url("img/fon.png");
+  max-width: 1900px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+}
+
 .header_black {
-  max-width: 1880px;
   background-color: black;
   height: 37px;
+  margin: 0 auto;
 }
 
 .fon {
@@ -47,8 +71,11 @@
 .header_red {
   background-image: url(img/red_top.png);
   width: 100%;
-  max-width: 1880px;
   height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
 }
 
 .conteiner {
@@ -59,6 +86,7 @@
 
 .top_txt {
   text-align: center;
+  padding: 0 10px;
 }
 
 .header_title {
@@ -67,5 +95,478 @@
   color: white;
   text-transform: uppercase;
   line-height: 1.2;
+}
+
+.header_subtitle {
+  font-size: 100px;
+  font-family: "FCSM Legendary";
+  color: #070303;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.video {
+  max-width: 1200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fon_content {
+  background-image: url(img/paper.jpg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text_privet {
+  max-width: 1200px;
+  padding: 50px 50px;
+  margin: 0 auto;
+}
+
+.text_content {
+  font-size: 20px;
+  font-family: "DINPro";
+  color: #020101;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.first_zag {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.first_zag::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 70px;
+  background-color: black;
+  left: 0;
+  top: 30%;
+  margin-top: -64px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.first_zag2 {
+  position: relative;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.first_zag2::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 70px;
+  background-color: black;
+  left: 0;
+  top: 50px;
+  margin-top: -64px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.blackkv {
+  -webkit-box-ordinal-group: 1000;
+      -ms-flex-order: 999;
+          order: 999;
+  margin-right: auto;
+  width: 50px;
+  height: 70px;
+  background-color: black;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.first_text {
+  margin: 0 auto;
+  font-size: 100px;
+  font-family: "FCSM Legendary";
+  color: #de1d3c;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+}
+
+.img2 {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 1200px;
+}
+
+.calendar {
+  margin-bottom: 50px;
+}
+
+.calendar_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+}
+
+.calenar_item {
+  width: 30%;
+}
+
+.calendar_img {
+  max-width: 525px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.poryadok_item1 {
+  background-image: url(img/bum1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.poryadok_item2 {
+  background-image: url(img/bum2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.poryadok_item3 {
+  background-image: url(img/bum3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.poryadok_text {
+  position: relative;
+  padding-top: 10px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  max-width: 660px;
+  margin-left: auto;
+  font-size: 20px;
+  font-family: "DIN Pro";
+  color: #444648;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.poryadok_text2 {
+  position: relative;
+  padding-top: 10px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  max-width: 660px;
+  margin-left: auto;
+  font-size: 20px;
+  font-family: "DIN Pro";
+  color: white;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.poryadok_text3 {
+  position: relative;
+  padding-top: 10px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  max-width: 660px;
+  margin-left: auto;
+  font-size: 20px;
+  font-family: "DIN Pro";
+  color: white;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.num {
+  font-size: 175px;
+  font-family: "FCSM Legendary";
+  color: #de1d3c;
+  text-transform: uppercase;
+  margin-top: -33px;
+  margin-right: 10px;
+}
+
+.num3 {
+  font-size: 175px;
+  font-family: "FCSM Legendary";
+  color: white;
+  text-transform: uppercase;
+  margin-top: -33px;
+  margin-right: 10px;
+}
+
+.buy {
+  text-align: center;
+  margin-top: -30px;
+  padding-bottom: 88px;
+}
+
+.img_buy {
+  max-width: 473px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img_win {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.subtitlezag {
+  font-size: 25px;
+  font-family: "DINPro";
+  color: #010100;
+  line-height: 1.2;
+}
+
+.calendar2 {
+  margin-bottom: 50px;
+}
+
+.calendar_list2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+}
+
+.calenar_item2 {
+  width: 33%;
+  max-width: 325px;
+}
+
+.calendar_img2 {
+  max-width: 325px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.loy_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loy_foto {
+  max-width: 35%;
+  margin-right: 20px;
+}
+
+.loy_foto_img {
+  max-width: 600px;
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.loy_text {
+  max-width: 45%;
+  font-size: 25px;
+  font-family: "DIN Pro";
+  color: #000006;
+  line-height: 1.1;
+}
+
+.dop_inner {
+  text-align: center;
+}
+
+.dop {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.dop_text {
+  font-size: 30px;
+  font-family: "DIN Pro";
+  text-decoration: underline;
+  line-height: 1.1;
+}
+
+.buy2 {
+  text-align: center;
+}
+
+.img_buy2 {
+  max-width: 900px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.buy3 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.card {
+  margin-top: 50px;
+}
+
+.card_inner {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 900px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card_foto {
+  margin-right: 20px;
+  -ms-flex-preferred-size: 550px;
+      flex-basis: 550px;
+}
+
+.card_foto_img {
+  max-width: 350px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.card_text {
+  font-size: 18px;
+  font-family: "DIN Pro";
+  color: #000006;
+  line-height: 1.1;
+}
+
+.podrobnee {
+  font-size: 35px;
+  font-family: "FCSM Legendary";
+  color: #de1d3c;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.zag3 {
+  margin-top: 50px;
+}
+
+.first_zag3 {
+  position: relative;
+  padding-bottom: 50px;
+  padding-left: 60px;
+  text-align: center;
+}
+
+.first_zag3::before {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 51px;
+  background-color: black;
+  left: 0;
+  top: 0;
+}
+
+.card_text4 {
+  font-size: 18px;
+  font-family: "DIN Pro";
+  color: #000006;
+  line-height: 1.1;
+  padding-right: 10px;
+}
+
+.red_b_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 80px;
+}
+
+.red_b_foto1 {
+  margin-right: 30px;
+}
+
+.red_b_img1 {
+  max-width: 150px;
+}
+
+.red_b_img2 {
+  max-width: 280px;
+}
+
+.podval {
+  margin-top: 50px;
+  padding-bottom: 40px;
+}
+
+.podval_text {
+  max-width: 1000px;
+  font-size: 18px;
+  font-family: "DIN Pro";
+  color: #000006;
+  line-height: 1.1;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
