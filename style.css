@@ -50,7 +50,7 @@
   max-width: 1900px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center 5%;
   margin: 0 auto;
 }
 
@@ -118,6 +118,12 @@
 
 .fon_content {
   background-image: url(img/paper.jpg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fon_content2 {
+  background-image: url(img/paper2.jpg);
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -557,6 +563,10 @@
   margin: 0 auto;
 }
 
+.red_b {
+  margin-bottom: 30px;
+}
+
 .red_b_inner {
   margin: 0 auto;
   display: -webkit-box;
@@ -585,7 +595,7 @@
 
 .podval {
   margin-top: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 140px;
 }
 
 .podval_text {
